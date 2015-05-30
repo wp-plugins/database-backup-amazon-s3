@@ -1,4 +1,4 @@
-=== Amazon S3 Backup ===
+=== Database Backup Amazon S3 ===
 Plugin Name: Database Backup Amazon S3
 Version: 1.0
 Donate link: http://www.wpadm.com/donate
@@ -12,15 +12,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Author: Sasha Junior
 Contributors: WPAdm.com
 
-Amazon S3 Backup Plugin to create Database Amazon S3 Backup of your Web Page
+WP Database Backup plugin helps you to create Database Backup and Restore Database Backup easily on single click.Manual or automated backups. 
+Database backup Amazon S3 to backup database / restore database of Web Page. Database backup to Amazon S3 Cloud
 
 == Description ==
 
-Supports WordPress Backups to Local Storage or upload Backup to Amazon S3.
+Database Backup Amazon S3 to create Database Backup & Restore Database Backup easy. Database Backups can be uploaded to Amazon S3 Cloud to store database backup on safe place - Amazon S3 Cloud
 
 * Local Backup: create the Database Backup of Web Page and store this at Local Storage of the Site;
-* Amazon S3 Backup: create the Database Backup of Web Page at Local Storage and upload this to Amazon S3;
+* Amazon S3 Backup to Cloud: create the Database Backup of Web Page at Local Storage and upload this to Amazon S3 Cloud;
 * Administrate ALL of Backups for ALL of your sites from one place – WPAdm-account (FULLY FREE);
+* Automated backup can be scheduled with an account at wpadm.com; 
 
 
 You can create your WPAdm account for central Backup administration at http://www.wpadm.com 
@@ -33,12 +35,12 @@ If you need help with the plugin or you want to report a bug please refer to htt
 
 == Installation ==
 
-1. Upload the plugin folder `Database Backup Amazon s3` to the `/wp-content/plugins/` directory of your WordPress installation.
+1. Upload the plugin folder `Database Backup Amazon S3` to the `/wp-content/plugins/` directory of your WordPress installation.
 2. Activate the plugin through the `Plugins` menu in WordPress
 
 
 
-Database Backup Amazon s3 Plugin have a settings section on WordPress plugin page.
+Database Backup Amazon S3 Plugin have a settings section on WordPress plugin page.
 If you need help with the plugin or you want to report a bug please refer to http://www.wpadm.com/support/
 
 == Other ==
