@@ -12,7 +12,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Author: Sasha Junior
 Contributors: WPAdm.com
 
-WP Database Backup plugin helps you to create Database Backup and Restore Database Backup easily on single click.Manual or automated backups. 
 Database backup Amazon S3 to backup database / restore database of Web Page. Database backup to Amazon S3 Cloud
 
 == Description ==
