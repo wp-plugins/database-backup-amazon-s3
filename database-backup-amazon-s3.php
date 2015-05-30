@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Database Backup Amazon s3 
-Description: Amazon s3  Backup Plugin to create Amazon s3 Database of your Web Page
+Plugin Name: Database Backup Amazon S3
+Description: Database backup Amazon S3 to backup database / restore database of Web Page. Database backup to Amazon S3 Cloud
 Version: 1.0
 */
 
