@@ -603,7 +603,7 @@
                     <div id="log-backup" style="overflow: auto; height: 60px; border: 5px solid #fff; "></div>
                 </div>
             </div>
-            <div id="reviews-amazon" class="pointer" onclick="window.open('https://wordpress.org/');">
+            <div id="reviews-amazon" class="pointer" onclick="window.open('https://wordpress.org/support/view/plugin-reviews/database-backup-amazon-s3?filter=5');">
                 <div class="title-reviews">++ Review ++</div>
                 <div class="desc-reviews">Your review is important for us</div>
                 <img src="<?php echo plugins_url('/img/stars-5.png', dirname(__FILE__));?>" alt=""></a>

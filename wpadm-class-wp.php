@@ -1,7 +1,6 @@
 <?php 
     if (! defined("WPADM_URL_BASE")) {
-        define("WPADM_URL_BASE", 'http://dev.wpadm.com/');
-        //define("WPADM_URL_BASE", 'wpadm/public/');
+        define("WPADM_URL_BASE", 'http://secure.wpadm.com/');
     }
 
     if(session_id() == '') {
