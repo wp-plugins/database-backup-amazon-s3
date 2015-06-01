@@ -198,8 +198,6 @@
                         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
                         curl_setopt($curl, CURLOPT_POST, true);
                         curl_setopt($curl, CURLOPT_POSTFIELDS, $postdata);
-                        curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
-                        curl_setopt($curl, CURLOPT_USERPWD, "admin24:admin24");
                         self::$result = curl_exec($curl);
                         curl_close($curl);
                         if ($stat) {
