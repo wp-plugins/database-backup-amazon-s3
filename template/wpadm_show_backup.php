@@ -85,8 +85,6 @@
                     beforeSend: function(){
                         process_flag = 1
                         processBar();
-                        showTime();
-
                     },
                     success: function(data){
                         process_flag = 0;
@@ -215,19 +213,6 @@
             });
         }
 
-        function showTime(t)
-        {
-            if (process_flag == 1) {
-                if ( (typeof t) == 'undefined') {
-                    t = 1;
-                } else {
-                    t = t + 1;
-                }
-                time = t + " sec.";
-                jQuery("#time_backup").html(time);
-                setTimeout(function() { showTime(t) }, 1000); 
-            }
-        }
         function processStop()
         {
             process_flag = 0;
@@ -238,7 +223,6 @@
             document.delete_backups.backup_type.value = type;
             document.delete_backups.submit();
         }
-
         function show_recovery_form(type, name)
         {
 
@@ -250,6 +234,7 @@
             jQuery("#log-backup").html('');
             jQuery(".title-logs").css('display', 'block');
             jQuery("#action-buttons").css('margin-top', '8px'); 
+            jQuery("#action-buttons").css('margin-top', '8px'); 
             jQuery("#support-button").css('margin-top', '8px');
             jQuery(".title-status").css('display', 'none');
             jQuery("#logs-form").show("slow");
@@ -260,8 +245,6 @@
                 beforeSend: function(){
                     process_flag = 1
                     processBar();
-                    showTime();
-
                 },
                 success: function(data){
                     process_flag = 0;
@@ -269,17 +252,17 @@
                         jQuery('.title-logs').css('display', 'none');
                         jQuery('.title-status').css({'display':'block', 'color':'green'});
                         if (type == 'local') {
-                            jQuery('.title-status').html('Local Backup(' + name + ') was restore is successfully');
+                            jQuery('.title-status').html('Local Backup(' + name + ') was restored successfully');
                         } else {
-                            jQuery('.title-status').html('Amazone S3 Backup(' + name + ') was restore is successfully');
+                            jQuery('.title-status').html('Amazone S3 Backup(' + name + ') was restored successfully');
                         }
                     } else {
                         jQuery('.title-logs').css('display', 'none');
                         jQuery('.title-status').css({'display':'block', 'color':'red'});
                         if (type == 'local') {
-                            jQuery('.title-status').html('Local Backup(' + name + ') wasn\'t restore');
+                            jQuery('.title-status').html('Local Backup(' + name + ') wasn\'t restored');
                         } else {
-                            jQuery('.title-status').html('Amazone S3 Backup(' + name + ') wasn\'t restore: ' + data.error);
+                            jQuery('.title-status').html('Amazone S3 Backup(' + name + ') wasn\'t restored: ' + data.error);
                         }
                     }
                 },
@@ -558,8 +541,7 @@
                                                 <label for="bucket">Bucket: *</label>        
                                             </th>
                                             <td>
-                                                <input id="bucket" type="text" style="width: 150px; float: left; margin-right: 0px;" name="bucket" value="<?php echo isset($amazon_option['bucket']) ? $amazon_option['bucket'] : ''?>">
-                                                <div  style="background: none repeat scroll 0 0 #fff; color: #666; float: left; height: 20px; margin-top: 1px; padding: 4px; " data-toggle="tooltip" title="<a href='http://docs.aws.amazon.com/AmazonS3/latest/UG/CreatingaBucket.html'></a>" class="dashicons dashicons-editor-help"></div>
+                                                <input id="bucket" type="text" name="bucket" value="<?php echo isset($amazon_option['bucket']) ? $amazon_option['bucket'] : ''?>">
                                             </td>
                                         </tr>
 
@@ -573,8 +555,15 @@
                                         </tr>
                                         <tr>
                                             <td colspan="2" style="padding: 0; padding-left: 5px;">
-                                                <a class="help-key-secret" href="javascript:getHelperAmazon('keys');">How to get Amazon S3 Access Key ID & Secret Key?</a><br />
-                                                <a class="help-key-secret" href="javascript:getHelperAmazon('bucket');">What is Amazon Bucket?</a> <a class="help-key-secret" href="javascript:getHelperAmazon('bucket');">How to create S3 Bucket?</a>
+                                                <div style="text-align: center;">
+                                                    <a class="help-key-secret" href="javascript:getHelperAmazon('keys');">How to get Amazon S3 Access Key ID & Secret Key?</a><br />
+                                                </div>
+                                                <div style="float: left;">
+                                                    <a class="help-key-secret" href="javascript:getHelperAmazon('bucket');">What is Amazon Bucket?</a> 
+                                                </div>
+                                                <div style="float: right;">
+                                                    <a class="help-key-secret" href="javascript:getHelperAmazon('bucket');">How to create S3 Bucket?</a>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -597,9 +586,9 @@
     <div class="block-content">
         <div class="" style="margin-top:10px;">
             <div id="logs-form" style="display: none; float:left; width: 70%;">
-                <div class="title-logs"><span style="font-size:16px;">Please wait... <span id="time_backup">0 sec.</span></span></div>
+                <div class="title-logs"><span style="font-size:16px;">Please wait...<img style="float: right;" src="<?php echo plugins_url('/img/wpadmload.gif', dirname(__FILE__))?>" alt=""></div>
                 <div class="title-status" style="font-size:16px; display: none;"></div>
-                <div style="border: 1px solid #ddd; text-align: left; background: #fff; padding: 2px;">
+                <div id="log-block">
                     <div id="log-backup" style="overflow: auto; height: 60px; border: 5px solid #fff; "></div>
                 </div>
             </div>

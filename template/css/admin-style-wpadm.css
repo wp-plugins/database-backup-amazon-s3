@@ -104,6 +104,9 @@
     float: left; 
     margin-left:5px;
 }
+#log-block {
+    border: 1px solid #ddd; text-align: left; background: #fff; padding: 2px;
+}
 
 .title-reviews {
     font-size: 20px;
