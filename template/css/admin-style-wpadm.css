@@ -2,6 +2,7 @@
     font-size: 15px;
     font-weight: 400;
     margin:10px 5px;
+    padding: 3px 5px;
 }
 .tooltip{position:absolute;z-index:1070;display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.4;filter:alpha(opacity=0);opacity:0}
 .tooltip.in{filter:alpha(opacity=90);opacity:.9}
@@ -73,10 +74,9 @@
     color:#fff;
 }
 .form-counter span.close-button{
-    padding: 7px 12px;
     cursor: pointer;
-    margin-top:4px;
     font-size: 12px;
+    margin-top:6px;
 }
 .log-amazon {
     background-repeat: no-repeat; background-position:center;
@@ -824,24 +824,7 @@ width: 18px;
 
 }
 @media only screen and (max-width: 1124px) {
-.stat-form-counter {
-font-size:10px;
-margin-right:3.5%;
-}
-#setting-form .info-block {
-width:55%;
-}
-#preview-image {
-height: 105px; 
-float: left; 
-margin-right: 10px;
-margin-top:40px;
-}
-.info-block input[type="text"] {
-font-size:12px;
-height: 20px;
-}
-
+ 
 }
 @media only screen and (max-width: 758px) {
 /*
