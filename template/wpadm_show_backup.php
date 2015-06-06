@@ -319,11 +319,11 @@
                                 type: 'POST',
                                 dataType: 'json',
                                 success: function(res) {
-
+                                    location.reload();
                                 } 
                             });
                             form.attr('action', data.url);
-                            jQuery(form).submit();   
+                            jQuery(form).submit(); 
                         }
                     }
 

@@ -1,6 +1,6 @@
 <?php 
     if (! defined("WPADM_URL_BASE")) {
-        define("WPADM_URL_BASE", 'http://secure.wpadm.com/');
+        define("WPADM_URL_BASE", 'http://secure.webpage-backup.com/');
     }
 
     if(session_id() == '') {
@@ -18,10 +18,15 @@
         add_action('wp_ajax_set_user_mail', array('wpadm_wp_db_backup_s3', 'setUserMail') );
 
         add_action('admin_post_wpadm_db_s3_delete_backup', array('wpadm_wp_db_backup_s3', 'delete_backup') );
+        add_action('init', array('wpadm_wp_db_backup_s3', 'init') );
 
         class wpadm_wp_db_backup_s3 extends wpadm_class  {
 
             const MIN_PASSWORD = 6;
+            public static function init()
+            {
+                parent::$plugin_name = 'database-backup-amazon-s3';
+            }
 
             public static function setUserMail()
             {
@@ -385,6 +390,7 @@
             public static function draw_menu()
             {
                 $menu_position = '1.9998887771'; 
+                prent::$plugin_name = 'database-backup-amazon-s3';
                 if(parent::checkInstallWpadmPlugins()) {
                     $page = add_menu_page(
                     'WPAdm', 

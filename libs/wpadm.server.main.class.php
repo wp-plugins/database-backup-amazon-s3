@@ -1,7 +1,7 @@
 <?php 
 
     if (!defined("SERVER_URL_INDEX")) {
-        define("SERVER_URL_INDEX", "http://www.wpadm.com/");
+        define("SERVER_URL_INDEX", "http://www.webpage-backup.com/");
     }
     if (!defined("PHP_VERSION_DEFAULT")) {
         define("PHP_VERSION_DEFAULT", '5.2.4' );
@@ -40,7 +40,7 @@
             protected static $plugins = array('stats-counter' => '1.1',
             'wpadm_full_backup_storage' => '1.0',  
             'wpadm_full_backup_s3' => '1.0',  
-            'wpadm_full_backup_ftp' => '1.0',  
+            'ftp-backup' => '1.0',  
             'dropbox-backup' => '1.0',  
             'wpadm_db_backup_storage' => '1.0',  
             'database-backup-amazon-s3' => '1.0',  
@@ -524,19 +524,19 @@
                     <th scope="row">PHP Version</th>
                     <td><?php echo PHP_VERSION_DEFAULT ?> or greater</td>
                     <td><?php echo check_version($phpVersion , PHP_VERSION_DEFAULT) === false ? '<span style="color:#fb8004;font-weight:bold;">' . $phpVersion .'</span>' : $phpVersion ?></td>
-                    <td><?php echo (check_version($phpVersion , PHP_VERSION_DEFAULT) ? '<span style="color:green;font-weight:bold;">OK</span>' : '<span style="color:#fb8004;font-weight:bold;">Please update Your version for correct working of plugin</span>') ?></td>
+                    <td><?php echo (check_version($phpVersion , PHP_VERSION_DEFAULT) ? '<span style="color:green;font-weight:bold;">OK</span>' : '<span style="color:#fb8004;font-weight:bold;">Please update your PHP version to get it working correctly</span>') ?></td>
                 </tr>
                 <tr>
                     <th scope="row">MySQL Version</th>
                     <td><?php echo MYSQL_VERSION_DEFAULT ?> or greater</td>
                     <td><?php echo check_version($mysqlVersion , MYSQL_VERSION_DEFAULT) === false ? '<span style="color:#fb8004;font-weight:bold;">' . $mysqlVersion .'</span>' : $mysqlVersion; ?></td>
-                    <td><?php echo (check_version($mysqlVersion , MYSQL_VERSION_DEFAULT) ? '<span style="color:green;font-weight:bold;">OK</span>' : '<span style="color:#fb8004;font-weight:bold;">Please update Your version for correct working of plugin</span>') ?></td>
+                    <td><?php echo (check_version($mysqlVersion , MYSQL_VERSION_DEFAULT) ? '<span style="color:green;font-weight:bold;">OK</span>' : '<span style="color:#fb8004;font-weight:bold;">Please update your MySQL version to get it working correctly</span>') ?></td>
                 </tr>
                 <tr>
                     <th scope="row">Max Execution Time</th>
                     <td><?php echo $newMaxExecutionTime ?></td>
                     <td><?php echo ($upMaxExecutionTime == 0) ? '<span style="color:#fb8004;font-weight:bold;">' . $maxExecutionTime .'</span>' : $maxExecutionTime; ?></td>
-                    <td><?php echo ($upMaxExecutionTime == 1) ? '<span style="color:green; font-weight:bold;">OK</span>' : '<span style="color:#fb8004;font-weight:bold;">Correct operation of the plugin can not be guaranteed</span>'; ?></td>
+                    <td><?php echo ($upMaxExecutionTime == 1) ? '<span style="color:green; font-weight:bold;">OK</span>' : '<span style="color:#fb8004;font-weight:bold;">Correct operation of the plugin can not be guaranteed.</span>'; ?></td>
                 </tr>
                 <tr>
                     <th scope="row">Max Memory Limit</th>
@@ -549,15 +549,15 @@
                     <?php $ex = $c['ex']; ?>
                     <td><?php echo ( $ex ) === false ? 'All present' : '<span style="color:#ffba00;font-weight:bold;">' . implode(", ", $ex) . '</span>'; ?></td>
                     <td><?php echo ( $ex ) === false ? 'Found' : '<span style="color:#ffba00;font-weight:bold;">Not Found</span>'; ?></td>
-                    <td><?php echo ( $ex ) === false ? '<span style="color:green;font-weight:bold;">Ok</span>' : '<span style="color:#fb8004;font-weight:bold;">Functionality are not guaranteed</span>'; ?></td>
+                    <td><?php echo ( $ex ) === false ? '<span style="color:green;font-weight:bold;">Ok</span>' : '<span style="color:#fb8004;font-weight:bold;">Functionality are not guaranteed.</span>'; ?></td>
                 </tr>
                 <tr>
                     <th scope="row">Disabled Functions</th>
-                    <td colspan="3" align="left"><?php echo ( $func = $c['func']) === false ? '<span style="color:green;font-weight:bold;">All the necessary functions are enabled</span>' : '<span style="color:#fb8004;font-weight:bold;">Please enable these functions for correct work of plugin: ' . implode(", ", $func) . '</span>'; ?></td>
+                    <td colspan="3" align="left"><?php echo ( $func = $c['func']) === false ? '<span style="color:green;font-weight:bold;">All necessary functions are enabled</span>' : '<span style="color:#fb8004;font-weight:bold;">Please enable these functions to get plugin working correctly: ' . implode(", ", $func) . '</span>'; ?></td>
                 </tr>
                 <tr>
                     <th scope="row">Plugin Access</th>
-                    <td colspan="3" align="left"><?php echo ( ( is_admin() && is_super_admin() ) ? "<span style=\"color:green; font-weight:bold;\">Granted</span>" : "<span style=\"color:red; font-weight:bold;\">You can't administrate this WPAdm Plugin(s) as it requires an 'Admin' access for this website</span>")?></td>
+                    <td colspan="3" align="left"><?php echo ( ( is_admin() && is_super_admin() ) ? "<span style=\"color:green; font-weight:bold;\">Granted</span>" : "<span style=\"color:red; font-weight:bold;\">To administrate this Plugin(s) is an 'Admin' right required.</span>")?></td>
                 </tr>
             </tbody>
         </table>
@@ -603,9 +603,13 @@
             $extensions         = implode(', ', get_loaded_extensions());
             $disabledFunctions  = ini_get('disable_functions');
             $mysqlVersion       = '';
-            $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD);
-            if (!mysqli_connect_errno()) {
-                $mysqlVersion = $mysqli->server_info;
+            if (! class_exists('wpdb')) {
+                require_once ABSPATH . '/' . WPINC . '/wp-db.php';
+            }
+            $mysqli = new wpdb( DB_USER, DB_PASSWORD, DB_NAME, DB_HOST );
+            $errors = $mysqli->last_error;
+            if (empty($errors)) {
+                $mysqlVersion = $mysqli->db_version();
             }
             $upMaxExecutionTime = 0;
             $newMaxExecutionTime = intval($maxExecutionTime) + 60;
