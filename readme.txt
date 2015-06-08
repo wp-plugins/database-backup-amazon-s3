@@ -54,10 +54,10 @@ WE DO NOT COLLECT AND DO NOT STORE THE PERSONAL DATA OF USERS FROM THIS PLUGIN!
 
 == Frequently Asked Questions ==
 
-Where can I find the Settings  for Amazon S3 Backup plugin?
+= Where can I find the Settings for Amazon S3 Backup plugin? =
 
 Just navigate to Amazon plugin page "Database Backup Amazon" in the main menu of your web page. You can find this on top in menu, near Dashboard.
-In the Amazon plugin page you can see the "Settings" block.
+In the Amazon plugin page on top you can see the "Settings" block.
 
 
 == Changelog ==
