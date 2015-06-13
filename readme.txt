@@ -66,7 +66,7 @@ ChangeLog
 
 == Upgrade Notice ==
 
-Upgrade Notice
+No Notice to Upgrade
 
 == Screenshots ==
 
