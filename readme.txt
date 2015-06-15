@@ -1,16 +1,16 @@
-=== Database Backup Amazon S3 ===
-Plugin Name: Database Backup Amazon S3
+=== jhkghjkhg ===
+Plugin Name: jhfghjfgj
 Version: 1.0.2
-Donate link: http://www.wpadm.com/donate
-URI: http://www.wpadm.com/database-backup-amazon-s3
-Tags: amazon, backup, amazon backup, database, file, full backup, manage, sicherung, database backup, file backup, page backup, page, web, web backup, web page, web page backup, site, site backup, back up, cloud, cloud files, cloud backup, db backup, dump, german, migrate, multisite, schedule, storage, time, upload, s3, amazon s3, schema backup, schema, data base 
+Donate link: http://www.gchfgjfgk.com/donate
+URI: http://www.gchfgjfgk.com/database-backup-amazon-s3
+Tags: 
 Requires at least: 4.0.0
 Tested up to: 4.2.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Author: Sasha Junior
-Contributors: WPAdm.com
+Contributors: gchfgjfgk.com
 
 Database backup Amazon S3 to backup database / restore database of Web Page. Database backup to Amazon S3 Cloud
 
@@ -20,17 +20,17 @@ Database Backup Amazon S3 to create Database Backup & Restore Database Backup ea
 
 * Local Backup: create the Database Backup of Web Page and store this at Local Storage of the Site;
 * Amazon S3 Backup to Cloud: create the Database Backup of Web Page at Local Storage and upload this to Amazon S3 Cloud;
-* Administrate ALL of Backups for ALL of your sites from one place – WPAdm-account (FULLY FREE);
-* Automated backup can be scheduled with an account at wpadm.com; 
+* Administrate ALL of Backups for ALL of your sites from one place – gchfgjfgk-account (FULLY FREE);
+* Automated backup can be scheduled with an account at gchfgjfgk.com; 
 
 
-You can create your WPAdm account for central Backup administration at http://www.wpadm.com 
-WPAdm account is FULLY FREE.
+You can create your gchfgjfgk account for central Backup administration at http://www.gchfgjfgk.com 
+gchfgjfgk account is FULLY FREE.
 
-If you need help with the plugin or you want to report a bug please refer to http://www.wpadm.com/support/
+If you need help with the plugin or you want to report a bug please refer to http://www.gchfgjfgk.com/support/
 
 = Credits =
-<em>This plugin is a fork of <a href="https://wordpress.org/plugins/dropbox-backup/">Dropbox backup</a>. Thanks to WPAdm API & Support.</em>
+<em>This plugin is a fork of <a href="https://wordpress.org/plugins/dropbox-backup/">Dropbox backup</a>. Thanks to gchfgjfgk API & Support.</em>
 
 == Installation ==
 
@@ -40,16 +40,16 @@ If you need help with the plugin or you want to report a bug please refer to htt
 
 
 Database Backup Amazon S3 Plugin have a settings section on WordPress plugin page.
-If you need help with the plugin or you want to report a bug please refer to http://www.wpadm.com/support/
+If you need help with the plugin or you want to report a bug please refer to http://www.gchfgjfgk.com/support/
 
 == Other ==
 
-Usefull additional functions can be found at www.wpadm.com in the User profile.
+Usefull additional functions can be found at www.gchfgjfgk.com in the User profile.
 Database Backup Amazon S3 is a new plugin, so we tryed have to provide a bug-free plugin/widget. We are maintain this project.
 
-Information about privacy: AFTER the user has been registered at WPAdm service AND has confirmed their registration,
+Information about privacy: AFTER the user has been registered at gchfgjfgk service AND has confirmed their registration,
 our plugin will get the minimum requirements of php and mysql configuration, version and language of wordpress.
-This data will be send to WPAdm service, to get the plugin work correctly, to extend supported configurations of user sites with wpadm-extensions and support.
+This data will be send to gchfgjfgk service, to get the plugin work correctly, to extend supported configurations of user sites with gchfgjfgk-extensions and support.
 WE DO NOT COLLECT AND DO NOT STORE THE PERSONAL DATA OF USERS FROM THIS PLUGIN!
 
 == Frequently Asked Questions ==
