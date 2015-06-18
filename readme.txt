@@ -1,6 +1,6 @@
 === Database Backup Amazon S3 ===
 Plugin Name: Database Backup Amazon S3
-Version: 1.0.2
+Version: 1.0.3
 Donate link: http://www.wpadm.com/donate
 URI: http://www.wpadm.com/database-backup-amazon-s3
 Tags: amazon, backup, amazon backup, database, file, full backup, manage, sicherung, database backup, file backup, page backup, page, web, web backup, web page, web page backup, site, site backup, back up, cloud, cloud files, cloud backup, db backup, dump, german, migrate, multisite, schedule, storage, time, upload, s3, amazon s3, schema backup, schema, data base 

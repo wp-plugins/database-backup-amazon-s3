@@ -390,7 +390,7 @@
             public static function draw_menu()
             {
                 $menu_position = '1.9998887771'; 
-                prent::$plugin_name = 'database-backup-amazon-s3';
+                parent::$plugin_name = 'database-backup-amazon-s3';
                 if(parent::checkInstallWpadmPlugins()) {
                     $page = add_menu_page(
                     'WPAdm', 
