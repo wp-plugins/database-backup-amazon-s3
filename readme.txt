@@ -59,6 +59,12 @@ WE DO NOT COLLECT AND DO NOT STORE THE PERSONAL DATA OF USERS FROM THIS PLUGIN!
 Just navigate to Amazon plugin page "Database Backup Amazon" in the main menu of your web page. You can find this on top in menu, near Dashboard.
 In the Amazon plugin page on top you can see the "Settings" block.
 
+= Is it secure to make my backup with Amazon S3 Backup plugin to Amazon S3 web services? =
+
+You use your own keys to send your backuped data to your application at Amazon S3 secure Cloud.
+We know, that Amazon S3 is secure by default. Only owners of the buckets and objects have access to Amazon S3 backup they had created. Amazon S3 Backup & Restore plugin supports user authentication to control access to backup data. You can use access with own keys to securely Restore or Backup your data to/from Amazon S3 via SSL endpoints using the HTTPS protocol. If you need extra security you can use the Server Side Encryption (SSE) option on Amazon or the Server Side Encryption with Customer-Provide Keys (SSE-C) option to encrypt data stored-at-rest. Amazon S3 provides the encryption technology for both SSE and SSE-C for your backup and other data stored at Amazon S3 Cloud. Alternatively you can use your own encryption libraries to encrypt data before storing backup in Amazon S3.
+If you need more security for your backup or restore data, or you have further questions, please contact us with link below.
+http://www.wpadm.com/support/
 
 == Changelog ==
 
