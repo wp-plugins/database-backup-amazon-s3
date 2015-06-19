@@ -3,7 +3,7 @@ Plugin Name: Database Backup Amazon S3
 Version: 1.0.3
 Donate link: http://www.wpadm.com/donate
 URI: http://www.wpadm.com/database-backup-amazon-s3
-Tags: amazon, backup, amazon backup, database, file, full backup, manage, sicherung, database backup, file backup, page backup, page, web, web backup, web page, web page backup, site, site backup, back up, cloud, cloud files, cloud backup, db backup, dump, german, migrate, multisite, schedule, storage, time, upload, s3, amazon s3, schema backup, schema, data base
+Tags: amazon, backup, amazon backup, database, file, full backup, manage, sicherung, database backup, file backup, page backup, page, web, web backup, web page, web page backup, site, site backup, back up, cloud, cloud files, cloud backup, db backup, dump, german, migrate, multisite, schedule, storage, time, upload, s3, amazon s3, schema backup, schema, data base 
 Requires at least: 4.0.0
 Tested up to: 4.2.2
 Stable tag: trunk
@@ -59,6 +59,12 @@ WE DO NOT COLLECT AND DO NOT STORE THE PERSONAL DATA OF USERS FROM THIS PLUGIN!
 Just navigate to Amazon plugin page "Database Backup Amazon" in the main menu of your web page. You can find this on top in menu, near Dashboard.
 In the Amazon plugin page on top you can see the "Settings" block.
 
+= Is it secure to make my backup with Amazon S3 Backup plugin to Amazon S3 web services? =
+
+You use your own keys to send your backuped data to your application at Amazon S3 secure Cloud.
+We know, that Amazon S3 is secure by default. Only owners of the buckets and objects have access to Amazon S3 backup they had created. Amazon S3 Backup & Restore plugin supports user authentication to control access to backup data. You can use access with own keys to securely Restore or Backup your data to/from Amazon S3 via SSL endpoints using the HTTPS protocol. If you need extra security you can use the Server Side Encryption (SSE) option on Amazon or the Server Side Encryption with Customer-Provide Keys (SSE-C) option to encrypt data stored-at-rest. Amazon S3 provides the encryption technology for both SSE and SSE-C for your backup and other data stored at Amazon S3 Cloud. Alternatively you can use your own encryption libraries to encrypt data before storing backup in Amazon S3.
+If you need more security for your backup or restore data, or you have further questions, please contact us with link below.
+http://www.wpadm.com/support/
 
 == Changelog ==
 
@@ -66,7 +72,7 @@ ChangeLog
 
 == Upgrade Notice ==
 
-Upgrade Notice
+No Notice to Upgrade
 
 == Screenshots ==
 
