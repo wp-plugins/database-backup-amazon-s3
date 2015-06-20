@@ -48,9 +48,12 @@ Usefull additional functions can be found at www.wpadm.com in the User profile.
 Database Backup Amazon S3 is a new plugin, so we tryed have to provide a bug-free plugin/widget. We are maintain this project.
 
 Information about privacy: AFTER the user has been registered at WPAdm service AND has confirmed their registration,
-our plugin will get the minimum requirements of php and mysql configuration, version and language of wordpress.
-This data will be send to WPAdm service, to get the plugin work correctly, to extend supported configurations of user sites with wpadm-extensions and support.
+our plugin will get the minimum requirements of PHP and MySQL configuration, version and language of WordPress.
+This data will be send to WPAdm service, to get the plugin work correctly, to extend supported configurations of user sites with WPAdm-extensions and support.
 WE DO NOT COLLECT AND DO NOT STORE THE PERSONAL DATA OF USERS FROM THIS PLUGIN!
+
+Vast arrays of a wide variety of data burst into our lives like a landslide, filling all the space on our hosting or server. We store various data on server or hosting space. Such data can be eg text, software, photo, music or video. Any user data, regardless of type, occupy a certain space on the disk.
+
 
 == Frequently Asked Questions ==
 
