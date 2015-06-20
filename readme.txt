@@ -52,9 +52,8 @@ our plugin will get the minimum requirements of PHP and MySQL configuration, ver
 This data will be send to WPAdm service, to get the plugin work correctly, to extend supported configurations of user sites with WPAdm-extensions and support.
 WE DO NOT COLLECT AND DO NOT STORE THE PERSONAL DATA OF USERS FROM THIS PLUGIN!
 
-Vast arrays of a wide variety of data burst into our lives like a landslide, filling all the space on our hosting or server. We store various data on server or hosting space. Such data can be e.g. text, software, photo, music or video. Any user data, regardless of type, occupy a certain space on the disk.
+Vast arrays of a wide variety of data burst into our lives like a landslide, filling all the space on our hosting or server. We store various data on server or hosting space. Such data can be e.g. text, software, photo, music or video. Any user data, regardless of type, occupy a certain space on the disk. For each type of data you want to back up. Depending on the type of backup files take up a lot of disk space. Furthermore, in case of difficulty a copy of the data on the same disk just can’t help you. If a website has been hacked or data was corrupted by a virus or you made the wrong system setup and that’s all... Your website is no longer available. From these reasons, the backup storage should be done outside of your host (hosting) or server. Where it is safe for your data, where there is no active virus and where hackers have nothing to do. Usually such a place can be a backup place, backup in one of cloud services online. That service can be any Cloud or your own server, which stands on a separate network or an entire separate protected network infrastructure.
 
-For each type of data you want to back up. Depending on the type of backup files take up a lot of disk space. Furthermore, in case of difficulty a copy of the data on the same disk just can’t help you. If a website has been hacked or data was corrupted by a virus or you made the wrong system setup and that’s all... Your website is no longer available.
 
 
 == Frequently Asked Questions ==
