@@ -3,7 +3,7 @@ Plugin Name: Database Backup Amazon S3
 Version: 1.0.3
 Donate link: http://www.wpadm.com/donate
 URI: http://www.wpadm.com/database-backup-amazon-s3
-Tags: amazon, backup, amazon backup, database, file, full backup, manage, sicherung, database backup, file backup, page backup, page, web, web backup, web page, web page backup, site, site backup, back up, cloud, cloud files, cloud backup, db backup, dump, german, migrate, multisite, schedule, storage, time, upload, s3, amazon s3, schema backup, schema, data base 
+Tags: amazon, backup, backups, amazon backup, database, file, full backup, manage, sicherung, database backup, file backup, page backup, page, web, web backup, web page, web page backup, site, site backup, back up, cloud, cloud files, cloud backup, db backup, dump, german, migrate, multisite, schedule, storage, time, upload, s3, amazon s3, schema backup, schema, data base, WooCommerce, WooCommerce backup 
 Requires at least: 4.0.0
 Tested up to: 4.2.2
 Stable tag: trunk
@@ -54,6 +54,12 @@ WE DO NOT COLLECT AND DO NOT STORE THE PERSONAL DATA OF USERS FROM THIS PLUGIN!
 
 Vast arrays of a wide variety of data burst into our lives like a landslide, filling all the space on our hosting or server. We store various data on server or hosting space. Such data can be e.g. text, software, photo, music or video. Any user data, regardless of type, occupy a certain space on the disk. For each type of data you want to back up. Depending on the type of backup files take up a lot of disk space. Furthermore, in case of difficulty a copy of the data on the same disk just can’t help you. If a website has been hacked or data was corrupted by a virus or you made the wrong system setup and that’s all... Your website is no longer available. From these reasons, the backup storage should be done outside of your host (hosting) or server. Where it is safe for your data, where there is no active virus and where hackers have nothing to do. Usually such a place can be a backup place, backup in one of cloud services online. That service can be any Cloud or your own server, which stands on a separate network or an entire separate protected network infrastructure.
 
+
+<strong>Backup and archiving sensitive data - Important questions for web shop owner</strong>
+WooCommerce owners (online shop) have to observe all sorts of things for their shops. Not only topics such as WooCommerce marketing, WooCommerce optimization, WooCommerce customer service and webpage speed are important, but also unpopular things like WooCommerce backup and WooCommerce security. Experience has shown time and again that their own WooCommerce backup of the data doesn't get the attention that should be given up for WooCommerce eCommerce web shop. A failure of the technique, a defective hard disk or a hacker attack can simply ensure that the entire operation of the WooCommerce online shop must be set. This can prevent the worst regular WooCommerce backups and one-time WooCommerce backups.
+
+<strong>Secure backup for shops: interface and customers data. Why save? Good reasons, that require a secure backup</strong>
+Probably the most important reason for data backup seems to be the continuation of the own company. It should be obvious that a sudden defective Shop software can cause huge problems. Without worked Shop - no sales! Reasons that can lead to non-functioning of the WooCommerce shop, for example, WooCommerce updates, WooCommerce attacks as a result of poor security or installing new WooCommerce modules. An iron principle should be that before any amendment of the shop system, both the database and the shop software of WooCommerce has to be secured itself.
 
 
 == Frequently Asked Questions ==
