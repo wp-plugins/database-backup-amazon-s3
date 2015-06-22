@@ -76,6 +76,10 @@ We know, that Amazon S3 is secure by default. Only owners of the buckets and obj
 If you need more security for your backup or restore data, or you have further questions, please contact us with link below.
 http://www.wpadm.com/support/
 
+I want to backup / recover my database for website. What should I do?
+
+To backup or recover your website, first of all, you must install our plugin.
+
 == Changelog ==
 
 ChangeLog
