@@ -61,6 +61,7 @@ WooCommerce owners (online shop) have to observe all sorts of things for their s
 <strong>Secure backup for shops: interface and customers data. Why save? Good reasons, that require a secure backup</strong>
 Probably the most important reason for data backup seems to be the continuation of the own company. It should be obvious that a sudden defective Shop software can cause huge problems. Without worked Shop - no sales! Reasons that can lead to non-functioning of the WooCommerce shop, for example, WooCommerce updates, WooCommerce attacks as a result of poor security or installing new WooCommerce modules. An iron principle should be that before any amendment of the shop system, both the database and the shop software of WooCommerce has to be secured itself.
 
+* Backup
 
 == Frequently Asked Questions ==
 
