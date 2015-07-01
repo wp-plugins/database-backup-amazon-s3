@@ -83,7 +83,7 @@ To backup or recover your website, first of all, you must install our plugin.
 
 == Changelog ==
 
-ChangeLog
+ChangeLog coming soon
 
 == Upgrade Notice ==
 
