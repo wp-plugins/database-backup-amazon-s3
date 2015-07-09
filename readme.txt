@@ -81,6 +81,9 @@ http://www.wpadm.com/support/
 
 To backup or recover your website, first of all, you must install Database Backup Amazon S3 Plugin.
 
+= How can I do an Incremental Backup of Database (Dump backup) with Database Backup Amazon S3 plugin? =
+
+
 
 == Changelog ==
 
