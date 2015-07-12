@@ -83,6 +83,8 @@ To backup or recover your website, first of all, you must install Database Backu
 
 = How can I do an Incremental Backup of Database (Dump backup) with Database Backup Amazon S3 plugin? =
 
+Incremental Backup (Incremental dump Backup) will be possible in future versions of Database Amazon S3 Backup plugin.
+
 
 
 == Changelog ==
