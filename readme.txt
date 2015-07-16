@@ -3,7 +3,7 @@ Plugin Name: Database Backup Amazon S3
 Version: 1.0.3
 Donate link: http://www.wpadm.com/donate
 URI: http://www.wpadm.com/database-backup-amazon-s3
-Tags: amazon, backup, backups, amazon backup, database, file, full backup, manage, sicherung, database backup, file backup, page backup, page, web, web backup, web page, web page backup, site, site backup, back up, cloud, cloud files, cloud backup, db backup, dump, german, migrate, multisite, schedule, storage, time, upload, s3, amazon s3, schema backup, schema, data base, WooCommerce, WooCommerce backup, restore, recovery, recover
+Tags: amazon, backup, backups, amazon backup, database, file, full backup, manage, sicherung, database backup, file backup, page backup, page, web, web backup, web page, web page backup, site, site backup, back up, cloud, cloud files, cloud backup, db backup, dump, german, migrate, multisite, schedule, storage, time, upload, s3, amazon s3, schema backup, schema, data base, WooCommerce, WooCommerce backup, restore, recovery, recover, scheduled backup
 Requires at least: 4.0.0
 Tested up to: 4.2.2
 Stable tag: trunk
@@ -88,6 +88,14 @@ Incremental Backup (Incremental dump Backup) will be possible in future versions
 = Our website must be backuped as a full backup amazon s3. Can we do that with this plugin? =
 
 This plugin is for Database backup of websites to Amazon S3 services only.
+
+= How to make Scheduled backup with Amazon S3 services for my Database (dump or MySQL backup)? =
+
+You can make a scheduled backup to Amazon S3 bucket, if you use a plugin that supported a scheduled backup. We plan to do the scheduled backup, but we expect scheduled backup to our customers' wishes. Once we receive a request from the user to make scheduled backup - we will do a scheduled backup immediately.
+
+= Is it possible to compare Amazon S3 backet backup (database backup to S3 backet) with google drive backup or google drive database backup? =
+
+We can compare Amazon S3 backet backup (database backup to S3 backet) with google drive backup or google drive database backup, when google drive backup is done.
 
 
 == Changelog ==
