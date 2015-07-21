@@ -104,7 +104,8 @@ ChangeLog coming soon
 
 == Upgrade Notice ==
 
-No Notice to Upgrade
+Notice to Upgrade:<br />
+we recommend to use the latest version of a Amazon S3 Database Backup plugin.
 
 == Screenshots ==
 
