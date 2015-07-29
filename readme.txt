@@ -5,7 +5,7 @@ Donate link: http://www.wpadm.com/donate
 URI: http://www.wpadm.com/database-backup-amazon-s3
 Tags: amazon, backup, backups, amazon backup, database, file, full backup, manage, sicherung, database backup, file backup, page backup, page, web, web backup, web page, web page backup, site, site backup, back up, cloud, cloud files, cloud backup, db backup, dump, german, migrate, multisite, schedule, storage, time, upload, s3, amazon s3, schema backup, schema, data base, WooCommerce, WooCommerce backup, restore, recovery, recover, scheduled backup
 Requires at least: 4.0.0
-Tested up to: 4.2.2
+Tested up to: 4.2.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
