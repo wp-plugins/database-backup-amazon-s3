@@ -824,9 +824,19 @@ width: 18px;
 
 }
 @media only screen and (max-width: 1124px) {
- 
+     .amazone-s3-info-details-form {
+        margin:5px 10px;
+        padding:5px 8px;
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 758px) {
+    
+    .amazone-s3-info-details-form {
+        margin:3px 7px;
+        padding:3px 4px;
+        font-size: 12px;
+    }
 /*
 vertical tablet computer
 */
