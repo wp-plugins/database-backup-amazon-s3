@@ -97,11 +97,15 @@ You can make a scheduled backup to Amazon S3 bucket, if you use a plugin that su
 
 We can compare Amazon S3 backet backup (database backup to S3 backet) with google drive backup or google drive database backup, when google drive backup is done.
 
-= I want to make a backup copy not only of databases of my website, but also of my website files. How I could make it? =
+= I want to make a backup copy not only of database of my website, but also of my website files. How I could make it? =
 
 Everything is very simple. If you need to make a backup copy not only of your database but also of all website files of your site, then you can use a plugin, which is intended for creation of a backups not only of database, but also a backup copy of file system of your site in general.<br />
 As we give the answer to your question within a plugin for creation of a database backup on Amazon S3, further you will see the link to a full-fledged, free plugin for creation of a full backup on Amazon S3.<br />
 That's it: https://wordpress.org/plugins/backup-amazon-s3/
+
+= Creation of my database backup lasts a long time. Why? =
+
+
 
 = Is there are multilingual support for backup plugin to Amazon S3 database? =
 
