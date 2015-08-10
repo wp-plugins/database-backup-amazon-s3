@@ -117,7 +117,7 @@ At this moment the multilingual support for backup plugin to Amazon S3 database 
 
 == Changelog ==
 
-ChangeLog coming soon
+Change Log coming soon
 
 == Upgrade Notice ==
 
