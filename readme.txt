@@ -105,6 +105,7 @@ That's it: https://wordpress.org/plugins/backup-amazon-s3/
 
 = Creation of my database backup lasts a long time. Why? =
 
+The reasons for a long time database backup are always different and also not present the uniform recipe against it, but we can make to you some recommendations.
 
 
 = Is there are multilingual support for backup plugin to Amazon S3 database? =
