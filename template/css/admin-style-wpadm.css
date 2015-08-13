@@ -825,7 +825,7 @@ width: 18px;
 }
 @media only screen and (max-width: 1124px) {
      .amazone-s3-info-details-form {
-         top:10px
+         top:10px;
         width:100%;
         line-height: 16px;
         font-size: 14px;
@@ -844,5 +844,11 @@ vertical tablet computer
 */
 }
 @media only screen and (max-width: 524px) {
+    .amazone-s3-info-details-form {
+        top:1px;
+        font-size: 10px;
+        width:70%;
+        line-height: 8px;
+    }
 /*phone*/
 }
