@@ -830,6 +830,9 @@ width: 18px;
         line-height: 16px;
         font-size: 14px;
     }
+    .amazone-s3-info-details-form .button-send {
+        font-size : 12px;
+    }
 }
 @media only screen and (max-width: 758px) {
     
@@ -838,6 +841,9 @@ width: 18px;
         font-size: 12px;
         width:100%;
         line-height: 10px;
+    }
+    .amazone-s3-info-details-form .button-send {
+        font-size : 10px;
     }
 /*
 vertical tablet computer
@@ -849,6 +855,9 @@ vertical tablet computer
         font-size: 10px;
         width:70%;
         line-height: 8px;
+    }
+    .amazone-s3-info-details-form .button-send {
+        font-size : 8px;
     }
 /*phone*/
 }
